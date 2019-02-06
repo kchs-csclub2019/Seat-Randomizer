@@ -17,7 +17,6 @@ public class GUISetup extends JFrame
 
     public void makeTheWindow()
     {
-
         window = getContentPane();
         window.setLayout(null);
         window.setBackground(Color.WHITE);
