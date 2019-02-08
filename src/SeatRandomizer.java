@@ -5,18 +5,24 @@ public class SeatRandomizer
 {
     public static void main(String[] args) throws IOException
     {
-        GUISetup window = new GUISetup();
-	    window.makeTheWindow();
-	    window.setVisible(true);
+//        GUISetup window = new GUISetup();
+//	    window.makeTheWindow();
+//	    window.setVisible(true);
 
-        String[] nameList = {"Jeongwoo Choi", "Richard Noh"};
+	    if(false)
+		{
+			String[] nameList = {"Jeongwoo Choi", "Richard Noh"};
 
-        CreateList test = new CreateList("test");
-        new AddToList(nameList, "test");
+			CreateList test = new CreateList("test");
+			new AddToList(nameList, "test");
 
-        ReadList finalArray = new ReadList("test");
-	    System.out.println(Arrays.toString(finalArray.getClassList()));
+			ReadList finalArray = new ReadList("test");
+			System.out.println(Arrays.toString(finalArray.getClassList()));
 
-//	    new DeleteList("test");
+		}
+		else
+		{
+			new DeleteList("test");
+		}
     }
 }
