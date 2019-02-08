@@ -1,13 +1,15 @@
-public class readFiles
+
+
+public class ReadFiles
 {
 	private String className;
 	private Scanner file;
-	public readFiles
+	public ReadFiles
 	{
 		
 	}
 	
-	public readFiles(String s)
+	public ReadFiles(String s)
 	{
 		setClassName(s);
 	}
