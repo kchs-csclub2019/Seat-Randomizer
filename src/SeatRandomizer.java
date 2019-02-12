@@ -9,12 +9,11 @@ public class SeatRandomizer
 //	    window.makeTheWindow();
 //	    window.setVisible(true);
 
-	    if(false)
+	    if(true)
 		{
 			String[] nameList = {"Jeongwoo Choi", "Richard Noh"};
 
-			CreateList test = new CreateList("test");
-			new AddToList(nameList, "test");
+			new CreateList(nameList, "test");
 
 			ReadList finalArray = new ReadList("test");
 			System.out.println(Arrays.toString(finalArray.getClassList()));
