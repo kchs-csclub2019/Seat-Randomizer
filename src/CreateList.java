@@ -10,7 +10,7 @@ public class CreateList
 
 		// It's much easier to have a int at the beginning of a .dat
 		// which says how many names there are in that file
-		String namesInString = names.length + "\n";
+		String namesInString = "";
 
 		// Adds all the names from the array into a string
 		for (int i = 0; i < names.length; i++)
