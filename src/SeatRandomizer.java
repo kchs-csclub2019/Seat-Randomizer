@@ -37,11 +37,13 @@ class Student
 	private int gradeLevel;
 	private int gradeAverage;
 
-	public static int studentCount = 0;
-
 	public Student()
 	{
-		studentCount++;
+	}
+
+	public Student(String s)
+	{
+		name = s;
 	}
 
 	public void setName(String n)
@@ -67,14 +69,5 @@ class Student
 	public void setGradeAverage(int num)
 	{
 		gradeAverage = num;
-	}
-}
-
-class classroom
-{
-
-	public classroom()
-	{
-
 	}
 }
