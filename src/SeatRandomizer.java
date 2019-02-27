@@ -1,31 +1,24 @@
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class SeatRandomizer
 {
     public static void main(String[] args) throws IOException
     {
-//        GUISetup window = new GUISetup();
-//	    window.makeTheWindow();
-//	    window.setVisible(true);
+    	ClassManager manager = new ClassManager();
+    	manager.setClassName("Period 2B");
 
+	    ArrayList<Student> names = new ArrayList<Student>();
+//	    manager.createClassFile(names);
 
-//	    if(true)
-//		{
-//			String[] nameList = {"Jeongwoo Choi", "Richard Noh"};
-//
-//			new CreateList(nameList, "test");
-//
-//			ReadList finalArray = new ReadList("test");
-//			System.out.println(finalArray.getClassList());
-//
-//		}
-//		else
-//		{
-//			new DeleteList("test");
-//		}
+	    System.out.println(manager.readClassFile());
 
-
+    	names.clear();
+    	names.add(new Student("Jeongwoo Choi"));
+    	names.add(new Student("Richard Noh"));
+	    manager.addToClassFile(names);
+	    System.out.println(manager.readClassFile());
     }
 }
 
@@ -51,9 +44,19 @@ class Student
 		name = n;
 	}
 
+	public String getName()
+	{
+		return name;
+	}
+
 	public void setAge(int num)
 	{
 		age = num;
+	}
+
+	public int getAge()
+	{
+		return age;
 	}
 
 	public void setId(int num)
@@ -61,13 +64,34 @@ class Student
 		id = num;
 	}
 
+	public int getId()
+	{
+		return id;
+	}
+
 	public void setGradeLevel(int num)
 	{
 		gradeLevel = num;
 	}
 
+	public int getGradeLevel()
+	{
+		return gradeLevel;
+	}
+
 	public void setGradeAverage(int num)
 	{
 		gradeAverage = num;
+	}
+
+	public int getGradeAverage()
+	{
+		return gradeAverage;
+	}
+
+	@Override
+	public String toString()
+	{
+		return name;
 	}
 }
